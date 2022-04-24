@@ -1,0 +1,53 @@
+<odoo>
+    <data>
+        <template id="invoice_report_inherited" inherit_id="account.report_invoice_document">
+            <!--            <xpath expr="//div[@class='page']" position="attributes">-->
+            <!--                <attribute name="style">font-size: 24px;</attribute>-->
+            <!--            </xpath>-->
+            <xpath expr="//div[hasclass('page')]" position="after">
+                <div class="footer">
+                    <table class="table table-borderless table-sm" style="table-layout: fixed; width: 100%; font-size:13px;">
+                        <tr>
+                            <td style="text-align:center">
+                                <hr style="border-top: 1px solid black; width:150px;"/>
+                            </td>
+
+                            <td style="text-align:center;">
+                                <hr style="border-top: 1px solid black; width:150px;"/>
+                            </td>
+                            <td style="text-align:center;">
+                                <hr style="border-top: 1px solid black; width:150px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <strong>Created By</strong>
+                            </td>
+                            <td style="text-align:center;">
+                                <strong>Reviewed By</strong>
+                            </td>
+                            <td style="text-align:center;">
+                                <strong>Approved By</strong>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-borderless table-sm"
+                           style="table-layout: fixed; width: 100%; font-size:12px">
+                        <tr>
+                            <td style="text-align:center; width:50%;">
+                                <strong>Created On :</strong>
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                            </td>
+
+
+                            <td style="text-align:center; width:50%;">
+                                <strong>Printed On :</strong>
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
