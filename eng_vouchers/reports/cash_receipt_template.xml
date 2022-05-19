@@ -132,20 +132,20 @@
                         </tbody>
                     </table>
                     
-                   <div class="row" style="margin-top:150px;" >
-                       <div class="col-xs-4">
-                             <strong>Prepared By: </strong><span style="margin-left:7px;"  t-field="o.user_id.name"/>
-                       </div>
-                       
-                       <div class="col-xs-4"  style="margin-left:310px;">
-                          <strong>Verified By:</strong><span  style="margin-left:7px;" t-field="o.review_by_id.name"/>
-                       </div>
-                       
-                       <div class="col-xs-4"   style="margin-left:310px;">
-                         <strong>Approved By:</strong><span style="margin-left:7px;" t-field="o.approve_by_id.name"/>
-                       </div>
-                       
-                    </div>
+<!--                   <div class="row" style="margin-top:150px;" >-->
+<!--                       <div class="col-xs-4">-->
+<!--                             <strong>Prepared By: </strong><span style="margin-left:7px;"  t-field="o.user_id.name"/>-->
+<!--                       </div>-->
+<!--                       -->
+<!--                       <div class="col-xs-4"  style="margin-left:310px;">-->
+<!--                          <strong>Verified By:</strong><span  style="margin-left:7px;" t-field="o.review_by_id.name"/>-->
+<!--                       </div>-->
+<!--                       -->
+<!--                       <div class="col-xs-4"   style="margin-left:310px;">-->
+<!--                         <strong>Approved By:</strong><span style="margin-left:7px;" t-field="o.approve_by_id.name"/>-->
+<!--                       </div>-->
+<!--                       -->
+<!--                    </div>-->
                     
 
                 </div>
